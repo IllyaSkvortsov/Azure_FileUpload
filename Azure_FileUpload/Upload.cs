@@ -17,9 +17,7 @@ namespace Azure_FileUpload
 
         public static void ToBlob()
         {
-            string conn = "DefaultEndpointsProtocol=https;AccountName=fileuploadblobstorage;" +
-                "AccountKey=aLlBt7ryXfuMAWjfE9iOU7hQztRV6lnwYyq35CNvXjHIvI9KfZm/8E9yMWVZSyE1/" +
-                "1sdwCtTTXG8jBaKt7aDTQ==;EndpointSuffix=core.windows.net";
+            string conn = "(connection string)";
 
             CloudStorageAccount acc = CloudStorageAccount.Parse(conn);
             CloudBlobClient blobClient = acc.CreateCloudBlobClient();
@@ -37,7 +35,7 @@ namespace Azure_FileUpload
 
         public static void ToQueue()
         {
-            string conn = "Endpoint=sb://dolvundur-queue.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=N92GCQpoRDSNjcHnxcVI0AKZ80lzonr4C+9236ZRX1I=";
+            string conn = "(connection string)";
             string queue = "queue";
 
             var myClient = QueueClient.CreateFromConnectionString(conn, queue);

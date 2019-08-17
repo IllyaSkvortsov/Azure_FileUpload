@@ -64,7 +64,7 @@ namespace Azure_FileUpload
 
         static SqlConnection ConnectToDatabase()
         {
-            string connString = "Server=tcp:dotnet-file-upload-project-server.database.windows.net,1433;Initial Catalog=database;Persist Security Info=False;User ID=dolvundur;Password=20012325rT;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string connString = "(connection string)";
             SqlConnection conn = new SqlConnection(connString);
 
             try
